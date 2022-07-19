@@ -2,6 +2,7 @@
 
 //
 import { sax } from './utils/sax.js'
+import HelloWorld from './components/HelloWorld.vue'
 
 const strict = true; // set to false for html-mode
 const parser = sax.parser(strict);
@@ -65,7 +66,13 @@ parser.write(testString).close();
 </script>
 
 <template>
+<VApp>
+  <VMain>
+    <VBtn>Click me,</VBtn>
+  </VMain>
+</VApp>
   <div>just for display</div>
+  <HelloWorld></HelloWorld>
   <ul>
     <li v-for="child in oDom.children">
       {{ child.name }}

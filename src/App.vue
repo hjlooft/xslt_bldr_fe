@@ -1,9 +1,7 @@
 <script setup lang="ts">
 
-//
-//import { sax } from './utils/sax.js'
-import useSaxXml2JsonDoc from './composables/useSaxXml2JsonDoc.js';
-import XmlTagVue from './components/XmlTag.vue';
+import useSaxXml2JsonDoc from '~/composables/useSaxXml2JsonDoc.js';
+import XmlTagVue from '~/components/XmlTag.vue';
 
 const { parseXml2Json } = useSaxXml2JsonDoc()
 
